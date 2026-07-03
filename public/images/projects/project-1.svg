@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="40" fill="#F7F5F0"/>
+  <rect x="120" y="130" width="960" height="640" rx="40" fill="white" stroke="#DCE5D2"/>
+  <rect x="190" y="200" width="380" height="250" rx="30" fill="#A3B18A" fill-opacity="0.22"/>
+  <rect x="620" y="200" width="330" height="150" rx="30" fill="#436F52" fill-opacity="0.16"/>
+  <rect x="620" y="380" width="220" height="140" rx="30" fill="#294531" fill-opacity="0.10"/>
+  <text x="190" y="560" fill="#294531" font-family="Arial, sans-serif" font-size="42" font-weight="700">Luxury Wellness Launch</text>
+</svg>

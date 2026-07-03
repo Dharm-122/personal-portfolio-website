@@ -1,0 +1,42 @@
+[
+  {
+    "name": "dharm bhatta",
+    "email": "bhattadharm843@gmail.com",
+    "phone": "9868880488",
+    "businessName": "dharm",
+    "serviceNeeded": "SEO",
+    "budget": "10000",
+    "message": "I want to talk to you",
+    "createdAt": "2026-06-30T15:12:47.721Z"
+  },
+  {
+    "name": "dharm bhatta",
+    "email": "bhattadharm843@gmail.com",
+    "phone": "9868880488",
+    "businessName": "ghhtrrr",
+    "serviceNeeded": "seo",
+    "budget": "2000",
+    "message": "my name is ifhuiii",
+    "createdAt": "2026-06-30T15:21:58.682Z"
+  },
+  {
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone": "1234567890",
+    "businessName": "Test Business",
+    "serviceNeeded": "SEO",
+    "budget": "1000",
+    "message": "Please contact me about your services.",
+    "createdAt": "2026-06-30T15:40:25.027Z"
+  },
+  {
+    "name": "dharm bhatta",
+    "email": "bhattadharm843@gmail.com",
+    "phone": "9868880488",
+    "businessName": "ghhh",
+    "serviceNeeded": "seo",
+    "budget": "1200",
+    "message": "my name is dffffhhh",
+    "createdAt": "2026-06-30T16:37:29.763Z"
+  }
+]

@@ -1,0 +1,17 @@
+
+> dharm-digital-room@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.100.228:3000
+
+ ✓ Starting...
+ ✓ Ready in 25s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 3s (115 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 16.9s (1514 modules)
+ GET / 200 in 23721ms
+ GET / 200 in 1354ms
+ GET / 200 in 705ms

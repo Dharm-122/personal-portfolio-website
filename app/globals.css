@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(163, 177, 138, 0.18), transparent 20%),
+    radial-gradient(circle at 80% 10%, rgba(67, 111, 82, 0.14), transparent 18%),
+    linear-gradient(180deg, #fbfaf6 0%, #f5f2eb 100%);
+}
+
+::selection {
+  background: rgba(163, 177, 138, 0.28);
+}
+
+.glass {
+  @apply border border-white/50 bg-white/60 backdrop-blur-xl shadow-glass;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-pad {
+  @apply py-16 sm:py-20 lg:py-28;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(163, 177, 138, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(163, 177, 138, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.soft-ring {
+  box-shadow: 0 0 0 1px rgba(163, 177, 138, 0.18), 0 20px 60px rgba(16, 32, 22, 0.08);
+}
+
+.input {
+  @apply w-full rounded-2xl border border-forest-100 bg-white/80 px-4 py-3 text-sm text-ink outline-none transition placeholder:text-ink/35 focus:border-sage-400 focus:ring-2 focus:ring-sage-200;
+}

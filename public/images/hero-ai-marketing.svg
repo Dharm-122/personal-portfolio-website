@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="40" fill="#F7F5F0"/>
+  <circle cx="280" cy="220" r="160" fill="#A3B18A" fill-opacity="0.26"/>
+  <circle cx="920" cy="180" r="210" fill="#436F52" fill-opacity="0.18"/>
+  <circle cx="930" cy="680" r="180" fill="#A3B18A" fill-opacity="0.18"/>
+  <rect x="180" y="170" width="840" height="560" rx="36" fill="white" fill-opacity="0.78" stroke="#DCE5D2"/>
+  <rect x="230" y="220" width="280" height="110" rx="24" fill="#294531"/>
+  <rect x="230" y="360" width="230" height="26" rx="13" fill="#D9E3CF"/>
+  <rect x="230" y="402" width="320" height="18" rx="9" fill="#E8EDE2"/>
+  <rect x="230" y="432" width="290" height="18" rx="9" fill="#E8EDE2"/>
+  <rect x="590" y="220" width="360" height="280" rx="28" fill="#EEF4EF" stroke="#DCE5D2"/>
+  <path d="M640 428C684 372 734 350 794 362C840 371 881 398 914 450" stroke="#436F52" stroke-width="16" stroke-linecap="round"/>
+  <path d="M640 382C700 330 760 312 820 327C867 339 901 361 934 408" stroke="#A3B18A" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="682" cy="390" r="10" fill="#A3B18A"/>
+  <circle cx="784" cy="346" r="10" fill="#436F52"/>
+  <circle cx="902" cy="446" r="10" fill="#294531"/>
+  <rect x="590" y="534" width="150" height="74" rx="22" fill="#A3B18A" fill-opacity="0.22"/>
+  <rect x="760" y="534" width="190" height="74" rx="22" fill="#436F52" fill-opacity="0.12"/>
+  <text x="230" y="278" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">AI Growth Dashboard</text>
+  <text x="230" y="482" fill="#435040" font-family="Arial, sans-serif" font-size="22">Premium strategy. Clear results.</text>
+</svg>

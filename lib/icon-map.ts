@@ -1,0 +1,31 @@
+import {
+  BarChart3,
+  Bot,
+  FileText,
+  Gauge,
+  LayoutTemplate,
+  Mail,
+  Megaphone,
+  Search,
+  SearchCheck,
+  Share2,
+  Sparkles,
+  Target,
+  Workflow,
+} from "lucide-react";
+
+export const serviceIcons = {
+  Sparkles,
+  Search,
+  Gauge,
+  Bot,
+  Megaphone,
+  Share2,
+  FileText,
+  Mail,
+  Workflow,
+  LayoutTemplate,
+  BarChart3,
+  Target,
+  SearchCheck,
+};

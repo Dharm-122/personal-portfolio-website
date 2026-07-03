@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#F7F5F0"/>
+  <rect x="120" y="120" width="960" height="560" rx="36" fill="white" stroke="#DCE5D2"/>
+  <path d="M220 560H980" stroke="#DDE6D3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="220" y="210" width="240" height="190" rx="30" fill="#A3B18A" fill-opacity="0.20"/>
+  <rect x="500" y="210" width="260" height="250" rx="30" fill="#436F52" fill-opacity="0.14"/>
+  <rect x="800" y="210" width="150" height="150" rx="30" fill="#294531" fill-opacity="0.10"/>
+  <circle cx="835" cy="390" r="70" fill="#A3B18A" fill-opacity="0.22"/>
+  <text x="220" y="485" fill="#294531" font-family="Arial, sans-serif" font-size="38" font-weight="700">AI Strategy</text>
+  <text x="220" y="530" fill="#436F52" font-family="Arial, sans-serif" font-size="22">Intelligent systems for growth</text>
+</svg>

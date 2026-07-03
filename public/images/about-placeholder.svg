@@ -1,0 +1,12 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" rx="48" fill="#F7F5F0"/>
+  <rect x="120" y="130" width="960" height="1140" rx="44" fill="white" fill-opacity="0.85" stroke="#DCE5D2"/>
+  <circle cx="600" cy="460" r="190" fill="#A3B18A" fill-opacity="0.22"/>
+  <circle cx="600" cy="520" r="130" fill="#436F52" fill-opacity="0.16"/>
+  <path d="M400 1015C428 882 506 812 600 812C694 812 772 882 800 1015" fill="#EEF4EF" stroke="#DCE5D2" stroke-width="6"/>
+  <circle cx="600" cy="474" r="112" fill="#F7F5F0" stroke="#294531" stroke-width="10"/>
+  <path d="M505 468C522 425 558 398 600 398C642 398 678 425 695 468" stroke="#294531" stroke-width="12" stroke-linecap="round"/>
+  <path d="M520 1070H680" stroke="#294531" stroke-width="14" stroke-linecap="round"/>
+  <text x="600" y="1200" text-anchor="middle" fill="#294531" font-family="Arial, sans-serif" font-size="34" font-weight="700">Professional Portrait Placeholder</text>
+  <text x="600" y="1248" text-anchor="middle" fill="#436F52" font-family="Arial, sans-serif" font-size="22">Dharm – The Digital Room</text>
+</svg>
