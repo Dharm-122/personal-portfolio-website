@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { HeroVisual } from "@/components/hero-visual";
+import { AboutPreview } from "@/components/about-preview";
 import { HomeServicesPreview } from "@/components/home-services-preview";
 import { StatsStrip } from "@/components/stats-strip";
 import { HomePortfolioPreview } from "@/components/home-portfolio-preview";
@@ -57,39 +57,7 @@ export default function HomePage() {
           <HeroVisual />
         </div>
       </section>
-      <section className="section-pad">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="About Preview"
-            title="A premium consultant who blends strategy, design thinking, and automation"
-            description="I work at the intersection of AI, digital marketing, and conversion psychology to help businesses grow with clarity and control."
-          />
-          <div className="mt-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div className="glass overflow-hidden rounded-[34px] p-4 soft-ring">
-              <div className="rounded-[28px] border border-white/70 bg-white/60 p-4">
-                <Image
-                  src="/images/about-placeholder.svg"
-                  alt="Professional portrait placeholder"
-                  width={1200}
-                  height={1400}
-                  className="h-auto w-full rounded-[24px]"
-                />
-              </div>
-            </div>
-            <div>
-              <p className="text-lg leading-8 text-ink/75">
-                With a polished, outcome-focused approach, I help brands design growth systems that feel premium,
-                perform efficiently, and scale without unnecessary complexity.
-              </p>
-              <div className="mt-6">
-                <Button href="/about" variant="secondary">
-                  Read More
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutPreview />
 
       <section className="section-pad bg-white/50">
         <div className="container-page">
