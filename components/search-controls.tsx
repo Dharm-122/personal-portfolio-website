@@ -27,13 +27,13 @@ export function ServiceGrid() {
   return (
     <div className="grid gap-6">
       <div className="grid gap-4 lg:grid-cols-[1.5fr_auto] lg:items-center">
-        <label className="flex items-center gap-3 rounded-2xl border border-forest-100 bg-white px-4 py-3 shadow-sm">
-          <Search className="h-4 w-4 text-ink/40" />
+        <label className="flex items-center gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.04] px-4 py-3 text-white shadow-[0_20px_80px_rgba(0,0,0,.18)] backdrop-blur-2xl">
+          <Search className="h-4 w-4 text-sage-300" />
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search services"
-            className="w-full bg-transparent text-sm outline-none"
+            className="w-full bg-transparent text-sm text-white outline-none placeholder:text-[#B8B8C5]"
           />
         </label>
         <div className="flex flex-wrap gap-2">
@@ -42,7 +42,9 @@ export function ServiceGrid() {
               key={item}
               onClick={() => setCategory(item)}
               className={`rounded-full px-4 py-2 text-sm transition ${
-                category === item ? "bg-forest-800 text-white" : "bg-white text-forest-800 hover:bg-forest-50"
+                category === item
+                  ? "bg-sage-400 text-[#0E0E1E] shadow-[0_0_24px_rgba(163,177,138,0.18)]"
+                  : "border border-white/[0.08] bg-white/[0.04] text-white/88 hover:border-white/[0.14] hover:bg-white/[0.07]"
               }`}
             >
               {item}

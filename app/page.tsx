@@ -72,12 +72,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-pad">
-        <div className="container-page">
+      <section className="section-pad relative overflow-hidden bg-[linear-gradient(180deg,rgba(18,18,36,0.25),rgba(14,14,30,0.8))]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(163,177,138,0.08),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(37,33,63,0.35),transparent_28%)]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.16]" />
+        <div className="container-page relative">
           <SectionHeading
             eyebrow="Why Choose Me"
             title="The numbers reflect a calm, ROI-focused approach"
             description="The work is built around clarity, systems, and refined execution."
+            tone="dark"
           />
           <div className="mt-10">
             <StatsStrip />
@@ -98,12 +101,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-pad">
-        <div className="container-page">
+      <section className="section-pad relative overflow-hidden bg-[linear-gradient(180deg,rgba(18,18,36,0.25),rgba(14,14,30,0.82))]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(163,177,138,0.08),transparent_24%),radial-gradient(circle_at_bottom_left,rgba(37,33,63,0.32),transparent_26%)]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.14]" />
+        <div className="container-page relative">
           <SectionHeading
             eyebrow="Testimonials"
             title="Trusted by founders and teams who want higher standards"
             description="The experience is designed to feel collaborative, strategic, and confidently premium."
+            tone="dark"
           />
           <div className="mt-10">
             <HomeTestimonials />
