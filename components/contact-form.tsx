@@ -51,7 +51,10 @@ export function ContactForm() {
 
   return (
     <div className="relative">
-      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4 rounded-[28px] border border-forest-100 bg-white p-6 shadow-premium sm:p-8">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="grid gap-4 rounded-[28px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.9),rgba(14,14,30,0.96))] p-6 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl sm:p-8"
+      >
         <div className="grid gap-4 sm:grid-cols-2">
           <Field label="Name" error={errors.name?.message}>
             <input {...register("name")} className="input" />
@@ -78,14 +81,14 @@ export function ContactForm() {
         <Button type="submit" loading={isSubmitting} className="w-full sm:w-auto">
           Submit Inquiry
         </Button>
-        {submitError ? <p className="text-sm text-red-600">{submitError}</p> : null}
+        {submitError ? <p className="text-sm text-red-400">{submitError}</p> : null}
       </form>
 
       {submitted ? (
         <motion.div
           initial={{ opacity: 0, y: 16, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          className="absolute inset-x-0 bottom-4 mx-auto w-[calc(100%-2rem)] rounded-3xl border border-sage-200 bg-white px-5 py-4 text-center shadow-premium sm:w-[calc(100%-4rem)]"
+          className="absolute inset-x-0 bottom-4 mx-auto w-[calc(100%-2rem)] rounded-3xl border border-sage-400/20 bg-[#121224] px-5 py-4 text-center text-white shadow-[0_20px_80px_rgba(0,0,0,.4)] sm:w-[calc(100%-4rem)]"
         >
           Thank you. Your message has been received successfully.
         </motion.div>
@@ -105,9 +108,9 @@ function Field({
 }) {
   return (
     <label className="grid gap-2">
-      <span className="text-sm font-medium text-forest-900">{label}</span>
+      <span className="text-sm font-medium text-white">{label}</span>
       {children}
-      {error ? <span className="text-xs text-red-600">{error}</span> : null}
+      {error ? <span className="text-xs text-red-400">{error}</span> : null}
     </label>
   );
 }

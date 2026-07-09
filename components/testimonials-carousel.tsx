@@ -36,14 +36,14 @@ export function TestimonialsCarousel() {
     <div className="relative">
       <div className="mb-6 flex items-center justify-end gap-3">
         <button
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-forest-200 bg-white text-forest-800"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-white backdrop-blur-2xl"
           onClick={() => scroll(-1)}
           aria-label="Previous testimonial"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
         <button
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-forest-200 bg-white text-forest-800"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-white backdrop-blur-2xl"
           onClick={() => scroll(1)}
           aria-label="Next testimonial"
         >
@@ -54,19 +54,19 @@ export function TestimonialsCarousel() {
         {testimonials.map((testimonial) => (
           <motion.article
             key={testimonial.name}
-            className="min-w-[min(100%,22rem)] snap-center rounded-[28px] border border-forest-100 bg-white p-6 shadow-premium"
+            className="min-w-[min(100%,22rem)] snap-center rounded-[28px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.9),rgba(14,14,30,0.96))] p-6 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl"
             initial={{ opacity: 0.6, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-1 text-sage-500">
+            <div className="flex items-center gap-1 text-sage-400">
               {Array.from({ length: testimonial.rating }).map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-current" />
               ))}
             </div>
-            <p className="mt-5 text-sm leading-7 text-ink/75">"{testimonial.quote}"</p>
+            <p className="mt-5 text-sm leading-7 text-[#B8B8C5]">"{testimonial.quote}"</p>
             <div className="mt-6">
-              <p className="font-semibold text-forest-900">{testimonial.name}</p>
+              <p className="font-semibold text-white">{testimonial.name}</p>
             </div>
           </motion.article>
         ))}

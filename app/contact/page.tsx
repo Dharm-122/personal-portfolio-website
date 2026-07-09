@@ -19,27 +19,29 @@ export default function ContactPage() {
         description="Share your goals, and I'll help you map a clear path for growth."
       />
 
-      <section className="section-pad">
-        <div className="container-page grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+      <section className="section-pad relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,18,36,0.2),rgba(14,14,30,0.82))]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.12]" />
+        <div className="container-page relative grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="grid gap-6">
-            <div className="rounded-[30px] border border-forest-100 bg-white p-6 shadow-sm">
+            <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-6 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
               <SectionHeading eyebrow="Contact Information" title="Let's connect" />
-              <div className="mt-6 grid gap-4 text-sm text-ink/70">
+              <div className="mt-6 grid gap-4 text-sm text-[#B8B8C5]">
                 <p className="flex items-center gap-3">
-                  <Phone className="h-4 w-4 text-sage-500" /> {siteConfig.phone}
+                  <Phone className="h-4 w-4 text-sage-400" /> {siteConfig.phone}
                 </p>
                 <p className="flex items-center gap-3">
-                  <Mail className="h-4 w-4 text-sage-500" /> {siteConfig.email}
+                  <Mail className="h-4 w-4 text-sage-400" /> {siteConfig.email}
                 </p>
                 <p className="flex items-center gap-3">
-                  <MapPin className="h-4 w-4 text-sage-500" /> {siteConfig.location}
+                  <MapPin className="h-4 w-4 text-sage-400" /> {siteConfig.location}
                 </p>
                 <p className="flex items-center gap-3">
-                  <Clock3 className="h-4 w-4 text-sage-500" /> Available for consultations by appointment
+                  <Clock3 className="h-4 w-4 text-sage-400" /> Available for consultations by appointment
                 </p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-[30px] border border-forest-100 bg-white shadow-sm">
+            <div className="overflow-hidden rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
               <iframe
                 title="Google Map Kathmandu Nepal"
                 src="https://www.google.com/maps?q=Kathmandu,Nepal&output=embed"
@@ -48,8 +50,8 @@ export default function ContactPage() {
               />
             </div>
           </div>
-          <div className="rounded-[30px] bg-sage-50 p-4 shadow-premium">
-            <div className="rounded-[26px] border border-white/70 bg-white/70 p-2 shadow-sm">
+          <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-4 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+            <div className="rounded-[26px] border border-white/[0.08] bg-[#0E0E1E]/70 p-2 shadow-[0_20px_80px_rgba(0,0,0,.2)]">
               <SectionHeading eyebrow="Consultation Booking" title="Tell me about your project" className="px-4 pt-4" />
               <div className="px-4 pb-4 pt-2">
                 <ContactForm />

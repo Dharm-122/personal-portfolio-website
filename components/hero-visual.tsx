@@ -15,7 +15,7 @@ export function HeroVisual() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.26em] text-sage-400">AI Growth Command Center</p>
               <h3 className="mt-2 font-heading text-2xl font-semibold text-white">A refined performance system</h3>
-              <p className="mt-2 max-w-sm text-sm leading-6 text-zinc-300">
+              <p className="mt-2 max-w-sm text-sm leading-6 text-[#B8B8C5]">
                 A premium snapshot of paid media, SEO, automation, and conversion signals working together.
               </p>
             </div>
@@ -28,7 +28,7 @@ export function HeroVisual() {
             <div className="rounded-[28px] border border-white/10 bg-black/40 p-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Momentum</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#B8B8C5]">Momentum</p>
                   <p className="mt-1 font-heading text-2xl font-semibold text-white">+38% growth</p>
                 </div>
                 <div className="rounded-2xl bg-sage-400/10 p-3 text-sage-300">
@@ -70,7 +70,7 @@ export function HeroVisual() {
                     <Gauge className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Efficiency</p>
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#B8B8C5]">Efficiency</p>
                     <p className="font-heading text-lg font-semibold text-white">Automation readiness</p>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export function HeroVisual() {
                     <ShieldCheck className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Trust Layer</p>
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#B8B8C5]">Trust Layer</p>
                     <p className="font-heading text-lg font-semibold text-white">Secure, measurable, calm</p>
                   </div>
                 </div>
@@ -99,10 +99,10 @@ export function HeroVisual() {
           </div>
 
           <div className="mt-4 flex flex-wrap gap-3">
-            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-zinc-300">SEO Engine</div>
-            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-zinc-300">Paid Media</div>
-            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-zinc-300">Automation</div>
-            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-zinc-300">AI Consulting</div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-[#B8B8C5]">SEO Engine</div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-[#B8B8C5]">Paid Media</div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-[#B8B8C5]">Automation</div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-[#B8B8C5]">AI Consulting</div>
             <div className="ml-auto flex items-center gap-2 rounded-full border border-sage-400/20 bg-sage-400/10 px-4 py-2 text-xs font-medium text-sage-200">
               <Sparkles className="h-3.5 w-3.5" />
               Premium intelligence
@@ -126,7 +126,7 @@ function MetricCard({
   return (
     <div className="rounded-[24px] border border-white/10 bg-black/35 p-4">
       <div className="flex items-center justify-between">
-        <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">{label}</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-[#B8B8C5]">{label}</p>
         <Icon className="h-4 w-4 text-sage-300" />
       </div>
       <p className="mt-4 font-heading text-3xl font-semibold text-white">{value}</p>

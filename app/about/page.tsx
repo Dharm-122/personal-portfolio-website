@@ -7,7 +7,7 @@ import { AnimatedCounter } from "@/components/animated-counter";
 
 export const metadata: Metadata = {
   title: "About Me",
-  description: "Professional story, vision, experience, skills, and values behind Dharm – The Digital Room.",
+  description: "Professional story, vision, experience, skills, and values behind Dharm - The Digital Room.",
 };
 
 export default function AboutPage() {
@@ -31,8 +31,10 @@ export default function AboutPage() {
         </Button>
       </PageHero>
 
-      <section className="section-pad">
-        <div className="container-page grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+      <section className="section-pad relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,18,36,0.2),rgba(14,14,30,0.82))]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.12]" />
+        <div className="container-page relative grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="glass overflow-hidden rounded-[34px] p-4 soft-ring">
             <Image
               src="/images/about-placeholder.svg"
@@ -48,20 +50,20 @@ export default function AboutPage() {
               title="Built for brands that value clarity and premium execution"
               description="My work combines marketing strategy, AI adoption, and conversion-focused design thinking to create consistent growth."
             />
-            <p className="text-base leading-8 text-ink/75">
+            <p className="text-base leading-8 text-[#B8B8C5]">
               The digital landscape rewards systems that are thoughtful, fast, and easy to manage. I partner with
               clients to simplify the moving parts of marketing and build a stronger path to revenue.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-forest-100 bg-white p-5 shadow-sm">
-                <h3 className="font-semibold text-forest-900">Mission</h3>
-                <p className="mt-2 text-sm leading-6 text-ink/70">
+              <div className="rounded-3xl border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-5 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+                <h3 className="font-semibold text-white">Mission</h3>
+                <p className="mt-2 text-sm leading-6 text-[#B8B8C5]">
                   Help businesses use AI and digital marketing to move with confidence and clarity.
                 </p>
               </div>
-              <div className="rounded-3xl border border-forest-100 bg-white p-5 shadow-sm">
-                <h3 className="font-semibold text-forest-900">Vision</h3>
-                <p className="mt-2 text-sm leading-6 text-ink/70">
+              <div className="rounded-3xl border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-5 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+                <h3 className="font-semibold text-white">Vision</h3>
+                <p className="mt-2 text-sm leading-6 text-[#B8B8C5]">
                   Build elegant, trustworthy growth systems that feel premium and perform consistently.
                 </p>
               </div>
@@ -70,8 +72,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-pad bg-white/55">
-        <div className="container-page">
+      <section className="section-pad relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,18,36,0.2),rgba(14,14,30,0.82))]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.12]" />
+        <div className="container-page relative">
           <SectionHeading
             eyebrow="Career Journey"
             title="A focused progression from execution to strategic advisory"
@@ -79,11 +83,14 @@ export default function AboutPage() {
           />
           <div className="mt-10 grid gap-4">
             {timeline.map((item) => (
-              <div key={item.year} className="grid gap-4 rounded-[28px] border border-forest-100 bg-white p-6 shadow-sm lg:grid-cols-[120px_1fr] lg:items-start">
-                <p className="font-heading text-3xl font-semibold text-sage-500">{item.year}</p>
+              <div
+                key={item.year}
+                className="grid gap-4 rounded-[28px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-6 shadow-[0_20px_80px_rgba(0,0,0,.35)] lg:grid-cols-[120px_1fr] lg:items-start"
+              >
+                <p className="font-heading text-3xl font-semibold text-sage-400">{item.year}</p>
                 <div>
-                  <h3 className="font-heading text-2xl font-semibold text-forest-900">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-ink/70">{item.text}</p>
+                  <h3 className="font-heading text-2xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-[#B8B8C5]">{item.text}</p>
                 </div>
               </div>
             ))}
@@ -100,19 +107,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-pad bg-white/55">
-        <div className="container-page grid gap-8 lg:grid-cols-2">
-          <div className="rounded-[30px] border border-forest-100 bg-white p-7 shadow-sm">
+      <section className="section-pad relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,18,36,0.2),rgba(14,14,30,0.82))]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.12]" />
+        <div className="container-page relative grid gap-8 lg:grid-cols-2">
+          <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-7 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
             <SectionHeading eyebrow="Skills" title="Tools and capabilities" />
-            <div className="mt-6 grid grid-cols-2 gap-3 text-sm text-ink/70">
-              {["SEO Strategy", "Google Ads", "AI Workflows", "Content Planning", "Analytics", "CRO", "Email Marketing", "Brand Messaging"].map((skill) => (
-                <div key={skill} className="rounded-2xl bg-forest-50 px-4 py-3">{skill}</div>
+            <div className="mt-6 grid grid-cols-2 gap-3 text-sm text-[#B8B8C5]">
+              {[
+                "SEO Strategy",
+                "Google Ads",
+                "AI Workflows",
+                "Content Planning",
+                "Analytics",
+                "CRO",
+                "Email Marketing",
+                "Brand Messaging",
+              ].map((skill) => (
+                <div key={skill} className="rounded-2xl border border-white/[0.06] bg-white/[0.04] px-4 py-3">
+                  {skill}
+                </div>
               ))}
             </div>
           </div>
-          <div className="rounded-[30px] border border-forest-100 bg-white p-7 shadow-sm">
+          <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-7 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
             <SectionHeading eyebrow="Values" title="Why clients trust me" />
-            <div className="mt-6 grid gap-4 text-sm leading-7 text-ink/70">
+            <div className="mt-6 grid gap-4 text-sm leading-7 text-[#B8B8C5]">
               <p>• Clear communication and practical recommendations</p>
               <p>• A premium, detail-conscious approach</p>
               <p>• Respect for brand voice, trust, and accessibility</p>

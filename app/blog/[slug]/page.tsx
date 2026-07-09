@@ -36,10 +36,12 @@ export default async function BlogDetailPage({ params }: Props) {
         <Button href="/contact">Book Consultation</Button>
       </PageHero>
 
-      <section className="section-pad">
-        <div className="container-page grid gap-10 lg:grid-cols-[1fr_300px]">
-          <article className="rounded-[30px] border border-forest-100 bg-white p-7 shadow-sm">
-            <div className="flex flex-wrap items-center gap-5 text-sm text-ink/60">
+      <section className="section-pad relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,18,36,0.2),rgba(14,14,30,0.82))]" />
+        <div className="absolute inset-0 grid-pattern opacity-[0.12]" />
+        <div className="container-page relative grid gap-10 lg:grid-cols-[1fr_300px]">
+          <article className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.9),rgba(14,14,30,0.96))] p-7 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+            <div className="flex flex-wrap items-center gap-5 text-sm text-[#B8B8C5]">
               <span className="inline-flex items-center gap-1.5">
                 <UserRound className="h-4 w-4" />
                 {post.author}
@@ -53,14 +55,14 @@ export default async function BlogDetailPage({ params }: Props) {
                 {post.publishedAt}
               </span>
             </div>
-            <div className="mt-8 grid gap-5 text-base leading-8 text-ink/75">
+            <div className="mt-8 grid gap-5 text-base leading-8 text-[#B8B8C5]">
               {post.content.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
 
-            <div className="mt-10 flex flex-wrap items-center gap-3 border-t border-forest-100 pt-6">
-              <span className="inline-flex items-center gap-2 rounded-full bg-forest-50 px-4 py-2 text-sm text-forest-900">
+            <div className="mt-10 flex flex-wrap items-center gap-3 border-t border-white/[0.08] pt-6">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-4 py-2 text-sm text-white">
                 <Share2 className="h-4 w-4" />
                 Share
               </span>
@@ -74,23 +76,27 @@ export default async function BlogDetailPage({ params }: Props) {
           </article>
 
           <aside className="grid gap-6">
-            <div className="rounded-[30px] border border-forest-100 bg-white p-6 shadow-sm">
-              <h3 className="font-heading text-2xl font-semibold text-forest-900">Related Articles</h3>
+            <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-6 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+              <h3 className="font-heading text-2xl font-semibold text-white">Related Articles</h3>
               <div className="mt-4 grid gap-4">
                 {related.map((item) => (
-                  <Link key={item.slug} href={`/blog/${item.slug}`} className="rounded-2xl bg-forest-50 px-4 py-3 text-sm text-forest-900">
+                  <Link
+                    key={item.slug}
+                    href={`/blog/${item.slug}`}
+                    className="rounded-2xl border border-white/[0.06] bg-white/[0.04] px-4 py-3 text-sm text-white"
+                  >
                     {item.title}
                   </Link>
                 ))}
               </div>
             </div>
-            <div className="rounded-[30px] border border-forest-100 bg-white p-6 shadow-sm">
-              <h3 className="font-heading text-2xl font-semibold text-forest-900">Comments</h3>
-              <p className="mt-3 text-sm leading-7 text-ink/70">
+            <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.88),rgba(14,14,30,0.96))] p-6 shadow-[0_20px_80px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+              <h3 className="font-heading text-2xl font-semibold text-white">Comments</h3>
+              <p className="mt-3 text-sm leading-7 text-[#B8B8C5]">
                 Reader comments can be integrated later with a CMS or database-backed module.
               </p>
-              <div className="mt-4 rounded-2xl border border-dashed border-forest-200 p-4 text-sm text-ink/55">
-                <MessageSquareText className="mb-2 h-5 w-5 text-sage-500" />
+              <div className="mt-4 rounded-2xl border border-dashed border-white/[0.12] p-4 text-sm text-[#B8B8C5]">
+                <MessageSquareText className="mb-2 h-5 w-5 text-sage-400" />
                 Comment section placeholder
               </div>
             </div>
@@ -98,16 +104,16 @@ export default async function BlogDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section-pad bg-white/55">
+      <section className="section-pad">
         <div className="container-page">
-          <div className="rounded-[34px] bg-forest-900 px-6 py-10 text-white shadow-premium sm:px-10">
+          <div className="rounded-[34px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(18,18,36,0.92),rgba(14,14,30,0.98))] px-6 py-10 text-white shadow-[0_35px_100px_rgba(0,0,0,.55)] sm:px-10">
             <SectionHeading
               eyebrow="CTA Banner"
               title="Want a premium growth plan for your brand?"
               description="Book a consultation and we will outline the right mix of AI, SEO, content, and automation."
             />
             <div className="mt-8">
-              <Button href="/contact" className="bg-white text-forest-900 hover:bg-white/90">
+              <Button href="/contact" className="bg-white text-[#0E0E1E] hover:bg-white/90">
                 Book Consultation
               </Button>
             </div>

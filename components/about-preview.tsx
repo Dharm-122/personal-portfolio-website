@@ -69,7 +69,7 @@ export function AboutPreview() {
             className="max-w-2xl text-center lg:text-left"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-sage-400">
-              About Preview
+              ABOUT PREVIEW
             </p>
             <h2 className="mt-5 text-balance font-heading text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-[60px]">
               A premium consultant who blends strategy, design thinking, and automation
