@@ -19,17 +19,17 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div>
-      <section className="relative overflow-hidden bg-sage-radial">
+      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(163,177,138,0.12),transparent_28%),radial-gradient(circle_at_top_right,rgba(255,255,255,0.06),transparent_22%),linear-gradient(180deg,#090909_0%,#141414_100%)]">
         <div className="absolute inset-0 grid-pattern opacity-30" />
         <div className="container-page relative grid gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-24">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex rounded-full border border-sage-200 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-sage-500">
+            <p className="mb-4 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-sage-300">
               {siteConfig.name}
             </p>
-            <h1 className="font-heading text-5xl font-semibold tracking-tight text-forest-900 text-balance sm:text-6xl lg:text-7xl">
+            <h1 className="font-heading text-5xl font-semibold tracking-tight text-white text-balance sm:text-6xl lg:text-7xl">
               Transform Your Business with AI-Powered Digital Marketing
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-ink/75 sm:text-lg">
+            <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-300 sm:text-lg">
               Premium consulting for brands that want refined strategy, smarter automation, and measurable growth.
               I help ambitious businesses turn marketing into a calm, high-performing system.
             </p>
@@ -47,9 +47,9 @@ export default function HomePage() {
                 ["SEO", "Organic visibility"],
                 ["Automation", "Effortless follow-up"],
               ].map(([title, text]) => (
-                <div key={title} className="rounded-3xl border border-white/60 bg-white/60 p-5 backdrop-blur-xl">
-                  <p className="font-heading text-xl font-semibold text-forest-900">{title}</p>
-                  <p className="mt-1 text-sm text-ink/65">{text}</p>
+                <div key={title} className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
+                  <p className="font-heading text-xl font-semibold text-white">{title}</p>
+                  <p className="mt-1 text-sm text-zinc-400">{text}</p>
                 </div>
               ))}
             </div>

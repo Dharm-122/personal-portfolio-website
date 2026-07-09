@@ -22,17 +22,17 @@ export function SiteHeader() {
     <header
       className={cn(
         "sticky top-0 z-50 border-b transition-all duration-300",
-        scrolled ? "border-forest-100/70 bg-white/85 backdrop-blur-xl shadow-sm" : "border-transparent bg-transparent",
+        scrolled ? "border-white/10 bg-zinc-950/85 backdrop-blur-xl shadow-sm" : "border-transparent bg-transparent",
       )}
     >
       <div className="container-page flex h-20 items-center justify-between gap-4">
         <Link href="/" className="group flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-forest-800 text-white shadow-premium">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-zinc-950 shadow-premium">
             D
           </div>
           <div>
-            <p className="font-heading text-sm font-semibold tracking-[0.2em] text-sage-500">DHARM</p>
-            <p className="text-xs text-ink/60">The Digital Room</p>
+            <p className="font-heading text-sm font-semibold tracking-[0.2em] text-sage-400">DHARM</p>
+            <p className="text-xs text-zinc-300">The Digital Room</p>
           </div>
         </Link>
 
@@ -41,7 +41,7 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="group flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-ink/75 transition hover:bg-forest-50 hover:text-forest-900"
+              className="group flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-zinc-300 transition hover:bg-white/5 hover:text-white"
             >
               <span>{link.label}</span>
               {link.label === "Services" ? <ChevronDown className="h-4 w-4 opacity-60" /> : null}
@@ -57,7 +57,7 @@ export function SiteHeader() {
         </div>
 
         <button
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-forest-200 bg-white/80 text-forest-800 lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-100 lg:hidden"
           aria-label="Toggle navigation"
           onClick={() => setOpen((value) => !value)}
         >
@@ -66,13 +66,13 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-forest-100 bg-white/95 px-4 py-4 backdrop-blur-xl lg:hidden">
+        <div className="border-t border-white/10 bg-zinc-950/95 px-4 py-4 backdrop-blur-xl lg:hidden">
           <div className="container-page grid gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-2xl px-4 py-3 text-sm font-medium text-forest-900 hover:bg-forest-50"
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-zinc-100 hover:bg-white/5"
                 onClick={() => setOpen(false)}
               >
                 {link.label}

@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  @apply bg-paper text-ink font-body antialiased;
+  @apply bg-zinc-950 text-zinc-100 font-body antialiased;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(163, 177, 138, 0.18), transparent 20%),
-    radial-gradient(circle at 80% 10%, rgba(67, 111, 82, 0.14), transparent 18%),
-    linear-gradient(180deg, #fbfaf6 0%, #f5f2eb 100%);
+    radial-gradient(circle at 20% 20%, rgba(163, 177, 138, 0.16), transparent 18%),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.08), transparent 16%),
+    linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
 }
 
 ::selection {
@@ -23,7 +23,8 @@ body {
 }
 
 .glass {
-  @apply border border-white/50 bg-white/60 backdrop-blur-xl shadow-glass;
+  @apply border border-white/10 backdrop-blur-xl shadow-glass;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .container-page {
@@ -50,5 +51,5 @@ body {
 }
 
 .input {
-  @apply w-full rounded-2xl border border-forest-100 bg-white/80 px-4 py-3 text-sm text-ink outline-none transition placeholder:text-ink/35 focus:border-sage-400 focus:ring-2 focus:ring-sage-200;
+  @apply w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-zinc-100 outline-none transition placeholder:text-zinc-400 focus:border-sage-400 focus:ring-2 focus:ring-sage-200;
 }

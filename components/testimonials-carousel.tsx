@@ -67,9 +67,6 @@ export function TestimonialsCarousel() {
             <p className="mt-5 text-sm leading-7 text-ink/75">"{testimonial.quote}"</p>
             <div className="mt-6">
               <p className="font-semibold text-forest-900">{testimonial.name}</p>
-              <p className="text-sm text-ink/60">
-                {testimonial.role}, {testimonial.company}
-              </p>
             </div>
           </motion.article>
         ))}
