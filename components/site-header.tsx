@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { navLinks } from "@/data/navigation";
@@ -27,13 +28,15 @@ export function SiteHeader() {
     >
       <div className="container-page flex h-20 items-center justify-between gap-4">
         <Link href="/" className="group flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/[0.08] bg-white text-zinc-950 shadow-[0_20px_80px_rgba(0,0,0,.2)]">
-            D
-          </div>
-          <div>
-            <p className="font-heading text-sm font-semibold tracking-[0.2em] text-sage-400">DHARM</p>
-            <p className="text-xs text-[#B8B8C5]">The Digital Room</p>
-          </div>
+          <Image
+            src="/dharm-bhatta-logo.png"
+            alt="Dharm Bhatta"
+            width={110}
+            height={74}
+            priority
+            className="h-12 w-[88px] rounded-xl object-cover object-center shadow-[0_12px_40px_rgba(0,0,0,.3)] transition-transform duration-300 group-hover:scale-[1.03]"
+          />
+          <p className="font-heading text-sm font-semibold tracking-[0.18em] text-white">DHARM BHATTA</p>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

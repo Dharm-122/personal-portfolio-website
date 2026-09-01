@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Dharm - The Digital Room to book a premium AI digital marketing consultation.",
+  description: "Contact Dharm Bhatta to book a premium AI digital marketing consultation.",
 };
 
 export default function ContactPage() {

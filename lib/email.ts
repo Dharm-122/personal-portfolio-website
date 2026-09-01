@@ -36,7 +36,7 @@ export async function sendContactEmail(payload: ContactPayload) {
   });
 
   await transporter.sendMail({
-    from: `"Dharm - The Digital Room" <${SMTP_USER}>`,
+    from: `"Dharm Bhatta" <${SMTP_USER}>`,
     to: recipient,
     subject: `New consultation request from ${payload.name}`,
     text: [

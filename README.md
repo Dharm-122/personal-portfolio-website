@@ -1,4 +1,4 @@
-# Dharm - The Digital Room
+# Dharm Bhatta
 
 Premium AI Digital Marketing portfolio website built with Next.js 15, React, Tailwind CSS, TypeScript, Framer Motion, Lucide React, and React Hook Form.
 
@@ -41,6 +41,10 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## cPanel / LiteSpeed deployment
+
+This is a Next.js server application. Do not serve the repository as a plain `public_html` directory, or LiteSpeed will show an `Index of /` listing. Create a Node.js application in cPanel, set its startup file to `server.js`, use the project folder as the application root, set `NODE_ENV=production`, run `npm install` and `npm run build`, and restart the application. Point `dharmbhatta.com` to that Node.js application or its reverse-proxy port.
 
 ## Email delivery
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { quickLinks } from "@/data/navigation";
 import { siteConfig } from "@/lib/site";
@@ -9,7 +10,14 @@ export function SiteFooter() {
     <footer className="border-t border-white/[0.08] bg-[linear-gradient(180deg,rgba(14,14,30,0.95),rgba(9,9,18,1))]">
       <div className="container-page section-pad grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-heading text-2xl font-semibold text-white">{siteConfig.name}</p>
+          <Image
+            src="/dharm-bhatta-logo.png"
+            alt="Dharm Bhatta"
+            width={210}
+            height={140}
+            className="h-20 w-[150px] rounded-2xl object-cover object-center shadow-[0_20px_80px_rgba(0,0,0,.3)]"
+          />
+          <p className="mt-4 font-heading text-2xl font-semibold text-white">{siteConfig.name}</p>
           <p className="mt-4 max-w-md text-sm leading-6 text-[#B8B8C5]">{siteConfig.tagline}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button href="/contact">Book Consultation</Button>

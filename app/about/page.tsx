@@ -7,7 +7,7 @@ import { AnimatedCounter } from "@/components/animated-counter";
 
 export const metadata: Metadata = {
   title: "About Me",
-  description: "Professional story, vision, experience, skills, and values behind Dharm - The Digital Room.",
+  description: "Professional story, vision, experience, skills, and values behind Dharm Bhatta.",
 };
 
 export default function AboutPage() {
